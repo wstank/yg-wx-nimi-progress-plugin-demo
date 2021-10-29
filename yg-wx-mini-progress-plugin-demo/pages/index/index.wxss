@@ -1,0 +1,11 @@
+button {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.banner-custom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

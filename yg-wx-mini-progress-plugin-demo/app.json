@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "plugins": {
+        "yg-plugin": {
+            "version": "1.1.20",
+            "provider": "wx968ae3bd3d740a8d",
+            "export": "yg-export.js",
+            "genericsImplementation": {
+                "yg-ad-page": {
+                    "yg-web-view": "./components/yg-web-view/yg-web-view"
+                }
+            }
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}
