@@ -1,0 +1,32 @@
+<view class="container">
+
+  <button bindtap="requestInterstitialAd">请求插屏广告</button>
+  <button bindtap="requestRewardVideoAd">请求激励视频广告</button>
+
+
+  <!-- 封面广告 -->
+  <yg-ad-view ad-id="9200" ad-type="splash" ext-data="{{shExtData}}" bind:onadload="onAdLoad" bind:onadshow="onAdShow"
+    bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+  <!-- Banner广告 -->
+  <yg-ad-view class="banner-custom" ad-id="9201" ad-type="banner" ext-data="{{shExtData}}" bind:onadload="onAdLoad"
+    bind:onadshow="onAdShow" bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+  <!-- 原生模板广告 -->
+  <yg-ad-view ad-id="9203" ad-type="template" bind:onadload="onAdLoad" bind:onadshow="onAdShow"
+    bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+  <!-- 插屏广告 -->
+  <yg-ad-view show-ad="{{showInterstitialAd}}" ad-id="9202" ad-type="interstitial" bind:onadload="onAdLoad"
+    bind:onadshow="onAdShow" bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+  <!-- 视频广告 -->
+  <yg-ad-view ad-id="9204" ad-type="video" ext-data="{{shExtData}}" bind:onadload="onAdLoad" bind:onadshow="onAdShow"
+    bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+  <!-- 激励视频广告 -->
+  <yg-ad-view show-ad="{{showRewardVideoAd}}" ad-id="9205" ad-type="rewardVideo" bind:onadload="onAdLoad"
+    bind:onadshow="onAdShow" bind:onadclick="onAdClick" bind:onadclose="onAdClose" bind:onaderror="onAdError">
+  </yg-ad-view>
+
+</view>
