@@ -1,4 +1,0 @@
-<view class="container">
-    <web-view src="{{url}}" binderror="loadError">
-    </web-view>
-</view>
