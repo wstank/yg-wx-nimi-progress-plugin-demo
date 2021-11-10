@@ -1,0 +1,14 @@
+<block>
+    <!-- 宿主Banner广告 -->
+    <ad wx:if="{{hostAdType=='banner'}}" unit-id="{{hostAdId}}" ad-intervals="{{hostExtData.adDuration}}"
+        bindload="onAdLoad" binderror="onAdError" bindclose="onAdClose">
+    </ad>
+    <!-- 宿主原生模板广告 -->
+    <ad-custom wx:if="{{hostAdType=='template'}}" unit-id="{{hostAdId}}" ad-intervals="{{hostExtData.adDuration}}"
+        bindload="onAdLoad" binderror="onAdError" bindhide="onAdClose">
+    </ad-custom>
+    <!-- 宿主视频广告 -->
+    <ad wx:if="{{hostAdType=='video'}}" unit-id="{{hostAdId}}" ad-type="video" ad-theme="{{hostExtData.videoAdTheme}}"
+        bindload="onAdLoad" binderror="onAdError" bindclose="onAdClose">
+    </ad>
+</block>
